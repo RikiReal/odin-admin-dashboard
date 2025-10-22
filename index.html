@@ -9,27 +9,77 @@
   <body>
     <header class="header"></header>
     <aside class="sidebar">
-      <nav class="sidebar-nav"></nav>
-      <ul>
-        <li>
-          <a href="#">Home</a>
-          <a href="#">Profile</a>
-          <a href="#">Messages</a>
-          <a href="#">History</a>
-          <a href="#">Tasks</a>
-          <a href="#">Communities</a>
-        </li>
-      </ul>
+      <nav class="sidebar-nav">
+        <!-- nav (and aside also) create their own section, so the header element here is the introduction to the navigation
+         https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/header -->
+        <header class="sidebar-title">
+          <a href="#">
+            <span aria-hidden="true"></span>
+            <h1>Dashboard</h1>
+          </a>
+        </header>
+        <ul>
+          <li>
+            <a href="#">
+              <span aria-hidden="true"></span>
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span aria-hidden="true"></span>
+              Profile
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span aria-hidden="true"></span>
+              Messages
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span aria-hidden="true"></span>
+              History
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span aria-hidden="true"></span>
+              Tasks
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span aria-hidden="true"></span>
+              Communities
+            </a>
+          </li>
+        </ul>
 
-      <ul class="sidebar-support-links">
-        <a href="#">Settings</a>
-        <a href="#">Support</a>
-        <a href="#">Privacy</a>
-      </ul>
+        <ul class="sidebar-support-links">
+          <li>
+            <a href="#">
+              <span aria-hidden="true"></span>
+              Settings
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span aria-hidden="true"></span>
+              Support
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span aria-hidden="true"></span>
+              Privacy
+            </a>
+          </li>
+        </ul>
+      </nav>
     </aside>
 
-    <main class="main-content">
-
-    </main>
+    <main class="main-content"></main>
   </body>
 </html>
