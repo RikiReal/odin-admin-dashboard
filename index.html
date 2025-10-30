@@ -7,7 +7,46 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="header"></header>
+    <header class="header">
+      <form class="searchbar-container">
+        <button type="submit" aria-label="Submit search">
+          <span aria-hidden="true"></span>
+        </button>
+        <input
+          type="search"
+          placeholder="Search..."
+          name="q"
+          id="searchbar-input"
+          aria-label="Search"
+        />
+        <label for="searchbar-input" hidden></label>
+      </form>
+      <div class="user-info">
+        <span class="notifications-icon"></span>
+        <img src="" alt="User profile picture" />
+        <p class="user-name">Morgan Oakley</p>
+      </div>
+      <div class="user-greeting">
+        <span alt="User profile picture" aria-hidden="true"></span>
+        <div>
+          <p class="greeting-intro">Hi there,</p>
+          <p class="greeting-name">Morgan Oakley (@morgan)</p>
+        </div>
+      </div>
+      <div class="header-buttons">
+        <ul>
+          <li>
+            <button type="button">New</button>
+          </li>
+          <li>
+            <button type="button">Upload</button>
+          </li>
+          <li>
+            <button type="button">Share</button>
+          </li>
+        </ul>
+      </div>
+    </header>
     <aside class="sidebar">
       <nav class="sidebar-nav">
         <!-- nav (and aside also) create their own section, so the header element here is the introduction to the navigation
