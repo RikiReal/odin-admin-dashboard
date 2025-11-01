@@ -10,7 +10,7 @@
     <header class="header">
       <form class="searchbar-container">
         <button type="submit" aria-label="Submit search">
-          <span aria-hidden="true"></span>
+          <img src="assets/magnify.svg" alt="Search icon" aria-hidden="true" />
         </button>
         <input
           type="search"
@@ -22,12 +22,24 @@
         <label for="searchbar-input" hidden></label>
       </form>
       <div class="user-info">
-        <span class="notifications-icon"></span>
-        <img src="" alt="User profile picture" />
+        <img
+          src="assets/bell-ring-outline.svg"
+          alt="Notifications icon"
+          class="user-notifications"
+        />
+        <img
+          src="assets/avatars/morgan.png"
+          alt="User avatar"
+          class="user-avatar"
+        />
         <p class="user-name">Morgan Oakley</p>
       </div>
       <div class="user-greeting">
-        <span alt="User profile picture" aria-hidden="true"></span>
+        <img
+          src="assets/avatars/morgan.png"
+          alt="User avatar"
+          class="user-avatar"
+        />
         <div>
           <p class="greeting-intro">Hi there,</p>
           <p class="greeting-name">Morgan Oakley (@morgan)</p>
@@ -47,50 +59,66 @@
         </ul>
       </div>
     </header>
+
+    <!-- TODO: Restructure the html, use Grid for layout in the css sidebar. its the better option here
+     the way I did it seems sloppy. -->
+
     <aside class="sidebar">
       <nav class="sidebar-nav">
         <!-- nav (and aside also) create their own section, so the header element here is the introduction to the navigation
          https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/header -->
         <header class="sidebar-title">
           <a href="#">
-            <span aria-hidden="true"></span>
-            <h1>Dashboard</h1>
+            <img
+              src="assets/view-dashboard.svg"
+              alt="Dashboard"
+              aria-hidden="true"
+            />
           </a>
+          <h1>Dashboard</h1>
         </header>
-        <ul>
+        <ul class="sidebar-links">
           <li>
             <a href="#">
-              <span aria-hidden="true"></span>
+              <img src="assets/home.svg" alt="Home" aria-hidden="true" />
               Home
             </a>
           </li>
           <li>
             <a href="#">
-              <span aria-hidden="true"></span>
+              <img
+                src="assets/card-account-details-outline.svg"
+                alt="Profile"
+                aria-hidden="true"
+              />
               Profile
             </a>
           </li>
           <li>
             <a href="#">
-              <span aria-hidden="true"></span>
+              <img src="assets/message.svg" alt="Message" aria-hidden="true" />
               Messages
             </a>
           </li>
           <li>
             <a href="#">
-              <span aria-hidden="true"></span>
+              <img src="assets/history.svg" alt="History" aria-hidden="true" />
               History
             </a>
           </li>
           <li>
             <a href="#">
-              <span aria-hidden="true"></span>
+              <img src="assets/list-box.svg" alt="Tasks" aria-hidden="true" />
               Tasks
             </a>
           </li>
           <li>
             <a href="#">
-              <span aria-hidden="true"></span>
+              <img
+                src="assets/account-group.svg"
+                alt="Communities"
+                aria-hidden="true"
+              />
               Communities
             </a>
           </li>
@@ -99,19 +127,23 @@
         <ul class="sidebar-support-links">
           <li>
             <a href="#">
-              <span aria-hidden="true"></span>
+              <img src="assets/cog.svg" alt="Settings" aria-hidden="true" />
               Settings
             </a>
           </li>
           <li>
             <a href="#">
-              <span aria-hidden="true"></span>
+              <img src="assets/help-box.svg" alt="Support" aria-hidden="true" />
               Support
             </a>
           </li>
           <li>
             <a href="#">
-              <span aria-hidden="true"></span>
+              <img
+                src="assets/shield-check.svg"
+                alt="Privacy"
+                aria-hidden="true"
+              />
               Privacy
             </a>
           </li>
@@ -127,54 +159,90 @@
             <p class="project-item-title">Super Cool Project</p>
             <p class="project-item-description">giberish</p>
             <ul class="project-item-action-list">
-              <li><span></span></li>
-              <li><span></span></li>
-              <li><span></span></li>
+              <li>
+                <img src="assets/star-plus-outline.svg" alt="Star project" />
+              </li>
+              <li>
+                <img src="assets/eye-plus-outline.svg" alt="Watch project" />
+              </li>
+              <li>
+                <img src="assets/share-outline.svg" alt="Share project" />
+              </li>
             </ul>
           </div>
           <div class="project-item">
             <p class="project-item-title">Less Cool Project</p>
             <p class="project-item-description">giberish</p>
             <ul class="project-item-action-list">
-              <li><span></span></li>
-              <li><span></span></li>
-              <li><span></span></li>
+              <li>
+                <img src="assets/star-plus-outline.svg" alt="Star project" />
+              </li>
+              <li>
+                <img src="assets/eye-plus-outline.svg" alt="Watch project" />
+              </li>
+              <li>
+                <img src="assets/share-outline.svg" alt="Share project" />
+              </li>
             </ul>
           </div>
           <div class="project-item">
             <p class="project-item-title">Impossible App</p>
             <p class="project-item-description">giberish</p>
             <ul class="project-item-action-list">
-              <li><span></span></li>
-              <li><span></span></li>
-              <li><span></span></li>
+              <li>
+                <img src="assets/star-plus-outline.svg" alt="Star project" />
+              </li>
+              <li>
+                <img src="assets/eye-plus-outline.svg" alt="Watch project" />
+              </li>
+              <li>
+                <img src="assets/share-outline.svg" alt="Share project" />
+              </li>
             </ul>
           </div>
           <div class="project-item">
             <p class="project-item-title">Easy Peasy App</p>
             <p class="project-item-description">giberish</p>
             <ul class="project-item-action-list">
-              <li><span></span></li>
-              <li><span></span></li>
-              <li><span></span></li>
+              <li>
+                <img src="assets/star-plus-outline.svg" alt="Star project" />
+              </li>
+              <li>
+                <img src="assets/eye-plus-outline.svg" alt="Watch project" />
+              </li>
+              <li>
+                <img src="assets/share-outline.svg" alt="Share project" />
+              </li>
             </ul>
           </div>
           <div class="project-item">
             <p class="project-item-title">Ad Blocker</p>
             <p class="project-item-description">giberish</p>
             <ul class="project-item-action-list">
-              <li><span></span></li>
-              <li><span></span></li>
-              <li><span></span></li>
+              <li>
+                <img src="assets/star-plus-outline.svg" alt="Star project" />
+              </li>
+              <li>
+                <img src="assets/eye-plus-outline.svg" alt="Watch project" />
+              </li>
+              <li>
+                <img src="assets/share-outline.svg" alt="Share project" />
+              </li>
             </ul>
           </div>
           <div class="project-item">
             <p class="project-item-title">Money Maker</p>
             <p class="project-item-description">giberish</p>
             <ul class="project-item-action-list">
-              <li><span></span></li>
-              <li><span></span></li>
-              <li><span></span></li>
+              <li>
+                <img src="assets/star-plus-outline.svg" alt="Star project" />
+              </li>
+              <li>
+                <img src="assets/eye-plus-outline.svg" alt="Watch project" />
+              </li>
+              <li>
+                <img src="assets/share-outline.svg" alt="Share project" />
+              </li>
             </ul>
           </div>
         </div>
@@ -200,32 +268,44 @@
         <h2>Trending</h2>
 
         <div class="trending-item">
-          <!-- <img src="" alt="" class="trending-img"> -->
-          <span></span>
+          <img
+            src="assets/avatars/tegan.png"
+            alt="Tegan's avatar"
+            class="user-avatar"
+          />
           <div>
             <p class="trending-username">@tegan</p>
             <p class="trending-projectname">World Peace Builder</p>
           </div>
         </div>
         <div class="trending-item">
-          <!-- <img src="" alt="" class="trending-img"> -->
-          <span></span>
+          <img
+            src="assets/avatars/morgan.png"
+            alt="Morgan's avatar"
+            class="user-avatar"
+          />
           <div>
             <p class="trending-username">@morgan</p>
             <p class="trending-projectname">Super Cool Project</p>
           </div>
         </div>
         <div class="trending-item">
-          <!-- <img src="" alt="" class="trending-img"> -->
-          <span></span>
+          <img
+            src="assets/avatars/kendall.png"
+            alt="Kendall's avatar"
+            class="user-avatar"
+          />
           <div>
             <p class="trending-username">@kendall</p>
             <p class="trending-projectname">Life Changing App</p>
           </div>
         </div>
         <div class="trending-item">
-          <!-- <img src="" alt="" class="trending-img"> -->
-          <span></span>
+          <img
+            src="assets/avatars/alex.png"
+            alt="Alex's avatar"
+            class="user-avatar"
+          />
           <div>
             <p class="trending-username">@alex</p>
             <p class="trending-projectname">No Traffic Maker</p>

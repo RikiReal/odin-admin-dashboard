@@ -1,19 +1,19 @@
 @font-face {
-    font-family: 'Roboto';
-    src: url('Roboto-Regular.woff2') format('woff2'),
-        url('Roboto-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Roboto";
+  src: url("fonts/Roboto-Regular.woff2") format("woff2"),
+    url("fonts/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('Roboto-Bold.woff2') format('woff2'),
-        url('Roboto-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Roboto";
+  src: url("fonts/Roboto-Bold.woff2") format("woff2"),
+    url("fonts/Roboto-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 :root {
@@ -72,6 +72,17 @@ body {
   display: inline-block;
 }
 
+.sidebar-title img {
+  height: 4rem;
+  display: inline-block;
+}
+
+.sidebar-links img,
+.sidebar-support-links img {
+  width: 2rem;
+  display: inline-block;
+}
+
 .header {
   grid-column: 2 / 3;
   display: grid;
@@ -87,6 +98,10 @@ body {
   gap: 15px;
 }
 
+.searchbar-container img {
+  width: 2rem;
+}
+
 #searchbar-input {
   flex: 1;
 }
@@ -95,6 +110,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.user-notifications {
+  width: 2rem;
+}
+
+.user-avatar {
+  width: 4rem;
+  border-radius: 50%;
 }
 
 .user-greeting {
@@ -136,6 +160,10 @@ body {
   justify-content: flex-end;
 }
 
+.project-item-action-list img {
+  width: 2rem;
+}
+
 .announcements {
   display: flex;
   flex-direction: column;
@@ -144,7 +172,6 @@ body {
 .trending {
   display: flex;
   flex-direction: column;
-  height: 100%;
 }
 
 .trending-item {
