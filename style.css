@@ -122,10 +122,32 @@ body {
 
 .searchbar-container img {
   width: 2rem;
+  margin: auto;
 }
 
-#searchbar-input {
+.searchbar-container button {
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.searchbar-container button:hover {
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 8%);
+  outline: 1px solid black;
+} 
+
+.searchbar-container input {
   flex: 1;
+  border: none;
+  border-radius: 30px;
+  background-color: #E1E7EF;
+  padding-left: 30px;
+  font-size: 1.5rem;
 }
 
 .user-info {
