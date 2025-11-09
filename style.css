@@ -19,6 +19,8 @@
 :root {
   line-height: 1.5;
   box-sizing: border-box;
+  --main-background-color: #1992D4;
+  --secondary-background-color: #E1E7EF;
 }
 
 body,
@@ -58,7 +60,7 @@ body {
 }
 
 .sidebar {
-  background-color: #1992D4;
+  background-color: var(--main-background-color);
   grid-area: 1 / 1 / 3 / 1;
   padding: 1rem;
   color: white;
@@ -145,7 +147,7 @@ body {
   flex: 1;
   border: none;
   border-radius: 30px;
-  background-color: #E1E7EF;
+  background-color: var(--secondary-background-color);
   padding-left: 30px;
   font-size: 1.5rem;
 }
@@ -195,8 +197,23 @@ body {
   gap: 30px;
 }
 
+.header-buttons ul button {
+  background-color: var(--main-background-color);
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 15px 50px;
+  border-radius: 50px;
+}
+
+.header-buttons ul button:hover { 
+  background-color: #1782bc;
+  cursor: pointer;
+}
+
 .main-content {
-  background-color: gray;
+  background-color: var(--secondary-background-color);
   display: grid;
   grid-template: 1fr 1fr / 4fr 1fr;
 }
