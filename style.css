@@ -114,7 +114,9 @@ body {
   grid-template-rows: 1fr 1fr;
   align-items: center;
   gap: 25px;
-  padding: 1rem;
+  padding: 1.5rem 4rem;
+  position: relative;
+  box-shadow: 0 3px 7px rgba(76, 74, 74, 0.415);
 }
 
 .searchbar-container {
