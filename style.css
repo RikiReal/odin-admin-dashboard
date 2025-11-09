@@ -154,6 +154,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 30px;
 }
 
 .user-notifications {
@@ -165,9 +166,27 @@ body {
   border-radius: 50%;
 }
 
+.user-name {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
 .user-greeting {
   display: flex;
   align-items: center;
+  gap: 30px;
+}
+
+.user-greeting .user-avatar {
+  width: 6rem;
+}
+
+.user-greeting div p{
+  font-weight: bold;
+}
+
+.user-greeting div p:last-of-type {
+  font-size: 2rem;
 }
 
 .header-buttons ul {
