@@ -271,7 +271,7 @@ body {
   flex: 1;
   background-color: white;
   border-radius: 15px;
-  padding: 0 2rem;
+  padding: 1rem 2rem;
   box-shadow: var(--shadow);
   display: flex;
   flex-direction: column;
@@ -305,10 +305,14 @@ body {
   box-shadow: var(--shadow);
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .trending-item {
   display: flex;
   align-items: center;
+}
+
+.trending-item > img {
+  margin-right: 1.5rem;
 }
