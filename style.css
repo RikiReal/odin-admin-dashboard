@@ -267,9 +267,45 @@ body {
   flex-direction: column;
 }
 
+.announcements-container {
+  flex: 1;
+  background-color: white;
+  border-radius: 15px;
+  padding: 0 2rem;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem
+}
+
+.announcement-item {
+  border-bottom: 1px solid black;
+  padding-bottom: 1rem;
+}
+
+.announcement-item:last-child {
+  border: none
+}
+
+.announcement-text {
+  font-size: 0.9rem;
+}
+
 .trending {
   display: flex;
   flex-direction: column;
+}
+
+.trending-container {
+  background-color: white;
+  flex: 1;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .trending-item {
