@@ -21,6 +21,7 @@
   box-sizing: border-box;
   --main-background-color: #1992D4;
   --secondary-background-color: #E1E7EF;
+  --shadow: 0 3px 7px rgba(76, 74, 74, 0.415);
 }
 
 body,
@@ -116,7 +117,7 @@ body {
   gap: 25px;
   padding: 1.5rem 4rem;
   position: relative;
-  box-shadow: 0 3px 7px rgba(76, 74, 74, 0.415);
+  box-shadow: var(--shadow);
 }
 
 .searchbar-container {
@@ -218,6 +219,8 @@ body {
   background-color: var(--secondary-background-color);
   display: grid;
   grid-template: 1fr 1fr / 4fr 1fr;
+  gap: 3rem;
+  padding: 3rem;
 }
 
 .projects {
@@ -229,17 +232,30 @@ body {
 .projects-container {
   flex: 1;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;;
 }
 
 .project-item {
+  padding: 2rem;
+  box-shadow: var(--shadow);
   display: flex;
   flex-direction: column;
+  border-left: 10px solid #F0B429;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.project-item > h3 {
+  font-size: 1.25rem;
 }
 
 .project-item-action-list {
+  flex: 1;
+  align-items: flex-end;
   display: flex;
   justify-content: flex-end;
+  gap: 30px;
 }
 
 .project-item-action-list img {
